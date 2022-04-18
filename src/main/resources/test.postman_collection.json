@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "8d0eb323-75f9-4164-81a2-50ce6a5c0a57",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "company add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"citi\",\n    \"employees\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add/company",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"suresh\",\n    \"password\": \"praja\",\n    \"name\": \"suresh praja\",\n    \"secret\": \"none\",\n    \"role\": \"manager\",\n    \"actions\": [],\n    \"company\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "action add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"02/02/2022\",\n    \"checkInTime\": \"09:09 AM\",\n    \"checkOutTime\": \"10:10 PM\",\n    \"employee\":{}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add/action",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"action"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
